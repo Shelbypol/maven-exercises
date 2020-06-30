@@ -1,18 +1,20 @@
+import java.util.Scanner;
+
 import static org.apache.commons.lang3.StringUtils.*;
 
 public class Practice {
 
     public static void main(String[] args) {
-//        Tells whether or not what the user entered is a number
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER NUM");
+        String userInput = sc.nextLine();
         //isNumeric
-        System.out.println(isNumeric("the"));
-        System.out.println();
-//        Flips the case of the string
-        //swapcase
-        System.out.println(swapCase("The dog's name is Fido."));
-//        Reverses the string
-//Reverse
-        System.out.println(reverse("Life, Universe"));
-
+        System.out.println(isNumeric(userInput));
+        //Flips the case of the string
+        System.out.println("ENTER SENTENCE");
+        System.out.println(swapCase(userInput));
+        //Reverses the string
+        System.out.println("ENTER REVERSE");
+        System.out.println(reverse(userInput));
     }
 }
